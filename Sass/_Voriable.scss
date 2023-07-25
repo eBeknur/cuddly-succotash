@@ -1,0 +1,26 @@
+@mixin btn {
+  cursor: pointer;
+  font-family: Poppins;
+  font-size: 21.33px;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: 67px;
+  background: #285e67;
+  font-weight: 600;
+  text-align: center;
+  line-height: 24px;
+  border: none;
+  color: $color-FFF;
+}
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+$color-btn: #285e67;
+$color-FFF: #fff;
+$color-p: #2b2b2b;
+$color-H: #2a2a2a;
+$color-icon: #ebbfae;
+$color-circle: #d0d0d0;
+$bcgk-main: #f4f4f4;

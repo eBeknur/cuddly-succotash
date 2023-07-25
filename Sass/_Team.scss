@@ -1,0 +1,141 @@
+.Team {
+  background-color: $bcgk-main;
+  margin-top: 36px;
+}
+
+.Team_section {
+  .Team_left {
+    img {
+      display: none;
+    }
+  }
+  .Team_right {
+    h4 {
+      font-size: 4rem;
+      font-weight: 600;
+      line-height: 47px;
+      text-align: center;
+      padding-top: 64px;
+    }
+    .Team_table {
+      @include flex;
+      gap: 41px;
+      padding-bottom: 43px;
+      margin-top: 41px;
+      .Team_table_cards {
+        @include flex;
+        gap: 20px;
+        p {
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .Team {
+    background-color: $bcgk-main;
+    margin-top: 36px;
+  }
+
+  .Team_section {
+    .Team_left {
+      img {
+        display: none;
+      }
+    }
+    .Team_right {
+      h4 {
+        font-size: 5rem;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        padding-top: 120px;
+        padding-bottom: 60px;
+      }
+      .Team_table {
+        @include flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 69px;
+        margin-bottom: 90px;
+        margin-top: 41px;
+        .Team_table_cards {
+          @include flex;
+          gap: 20px;
+          padding-bottom: 70px;
+          p {
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            max-width: 237px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .Team {
+    background-color: $bcgk-main;
+    margin-top: 36px;
+  }
+
+  .Team_section {
+    @include flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding-top: 56px;
+    padding-bottom: 80px;
+    .Team_left {
+      img {
+        display: flex;
+      }
+    }
+    .Team_right {
+      h4 {
+        font-size: 5rem;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .Team_table {
+        @include flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 69px;
+        margin-bottom: 0;
+        margin-top: 41px;
+        .Team_table_cards {
+          @include flex;
+          align-items: start;
+          gap: 20px;
+          padding-bottom: 0;
+          p {
+            text-align: start;
+            max-width: 237px;
+          }
+        }
+      }
+    }
+  }
+}

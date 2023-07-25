@@ -1,0 +1,139 @@
+.Services {
+  background-color: $bcgk-main;
+  margin-top: 36px;
+
+  .Services_left {
+    h3 {
+      font-size: 4rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 53px;
+      text-align: center;
+      color: $color-p;
+      padding-top: 64px;
+      padding-bottom: 50px;
+    }
+    .Services_table {
+      @include flex;
+      margin-bottom: 36px;
+      padding-bottom: 30px;
+      gap: 2.6rem;
+      .Services_table_cards {
+        @include flex;
+        p {
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          color: $color-p;
+          text-align: center;
+          margin-top: 20px;
+          //   max-width: 255px;
+        }
+      }
+    }
+  }
+  .Services_right {
+    img {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .Services {
+    background-color: $bcgk-main;
+    margin-top: 36px;
+    // padding: 0 0 10px 0;
+
+    .Services_left {
+      h3 {
+        font-size: 5rem;
+        font-weight: 600;
+        line-height: 62px;
+        text-align: center;
+        color: $color-p;
+        padding-top: 64px;
+        padding-bottom: 69px;
+      }
+      .Services_table {
+        @include flex;
+        flex-direction: row;
+        margin-bottom: 64px;
+        padding-bottom: 30px;
+        justify-content: center;
+        gap: 5.3rem;
+        padding-bottom: 100px;
+        .Services_table_cards {
+          @include flex;
+          p {
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            color: $color-p;
+            text-align: center;
+            margin-top: 20px;
+            max-width: 243px;
+          }
+        }
+      }
+    }
+    .Services_right {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .Services {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: $bcgk-main;
+    // margin-top: 36px;
+    .Services_section {
+      display: flex;
+      align-items: center;
+      gap: 19.1rem;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      align-items: end;
+    }
+
+    .Services_left {
+      padding-bottom: 70px;
+      h3 {
+        padding-bottom: 20px;
+        padding-top: 50px;
+      }
+      .Services_table {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        .Services_table_cards {
+          display: flex;
+          align-items: start;
+          p {
+            text-align: start;
+            max-width: 260px;
+          }
+        }
+      }
+    }
+    .Services_right {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      img {
+        display: flex;
+        align-items: end;
+      }
+    }
+  }
+}

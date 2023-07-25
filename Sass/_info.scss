@@ -1,0 +1,129 @@
+.info {
+  @include flex;
+  .info_right {
+    .info_top {
+      margin-bottom: 26px;
+      h2 {
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 49px;
+        text-align: center;
+        color: $color-H;
+        margin-top: 25px;
+        margin-bottom: 16px;
+      }
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 24px;
+        color: $color-p;
+        text-align: center;
+      }
+    }
+    .info_bottom {
+      @include flex;
+      gap: 2.6rem;
+      .info_bottom_child {
+        display: flex;
+        align-items: center;
+        gap: 2.3rem;
+        p {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          color: $color-btn;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .info {
+    @include flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2.5rem;
+    // margin-bottom: 80px;
+    .info_left {
+      // padding-top: 40px;
+
+      img {
+        height: 100%;
+        max-width: 430px;
+      }
+    }
+    .info_right {
+      .info_top {
+        h2 {
+          font-size: 5rem;
+          font-weight: 600;
+          line-height: 62px;
+          text-align: start;
+          color: $color-H;
+          // margin-top: 25px;
+          margin-top: 0;
+          margin-bottom: 16px;
+          // max-width: 430px;
+        }
+        p {
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 24px;
+          color: $color-p;
+          text-align: start;
+          margin-bottom: 90px;
+          // max-width: 430px;
+        }
+      }
+      .info_bottom {
+        @include flex;
+        gap: 4rem;
+        .info_bottom_child {
+          display: flex;
+          align-items: center;
+          gap: 2.3rem;
+          p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            color: $color-btn;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .info {
+    padding-top: 104px;
+    align-items: center;
+    padding-bottom: 100px;
+    .info_left {
+      img {
+        max-width: 580px;
+        
+      }
+    }
+    .info_right {
+      .info_top {
+        h2 {
+          max-width: 623px;
+        }
+        p {
+          max-width: 623px;
+        }
+      }
+    }
+  }
+}

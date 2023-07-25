@@ -1,0 +1,194 @@
+.Contact {
+  border-radius: 12px;
+  background: url(../images/Main_telefon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  padding-top: 71px;
+  position: relative;
+  //   height: 100vh;
+  .Contact_section {
+    @include flex;
+
+    justify-content: center;
+    .Contact_top {
+      text-align: center;
+      justify-content: center;
+      gap: 1.3rem;
+      padding: 10px 62px 110px;
+      h3 {
+        font-size: 2.1rem;
+        font-weight: 600;
+        line-height: 31px;
+        color: $color-FFF;
+        max-width: 236px;
+      }
+      p {
+        display: none;
+      }
+      button {
+        @include btn;
+        padding: 16px 62px;
+        background: transparent;
+        border: 1px solid white;
+        // backdrop-filter: 0;
+      }
+    }
+    .Contact_bottom {
+      background-color: $color-icon;
+      @include flex;
+      justify-content: center;
+      gap: 4.9rem;
+      padding: 71px 0;
+      width: 90%;
+      border-radius: 12px;
+      position: absolute;
+      transform: translateY(30px);
+      //   display: none;
+      top: 300px;
+      .Contact_Feature {
+        @include flex;
+        p {
+          font-size: 2.1rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          color: $color-p;
+          text-align: center;
+          margin-top: 18px;
+        }
+        img {
+          @include flex;
+          justify-content: center	;
+          width: 170px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .Contact {
+    border-radius: 12px;
+    background: url(../images/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    // height: 100vh;
+    .Contact_section {
+      @include flex;
+
+      justify-content: center;
+      .Contact_top {
+        img {
+          width: 92px;
+        }
+        @include flex;
+        text-align: center;
+        justify-content: center;
+        gap: 1.3rem;
+        padding: 10px 62px 110px;
+        padding-bottom: 250px;
+        h3 {
+          font-size: 3.8rem;
+          font-weight: 600;
+          line-height: 36px;
+          color: $color-FFF;
+          max-width: 640px;
+        }
+        p {
+          display: block;
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          color: $color-FFF;
+          max-width: 640px;
+          margin-bottom: 28px;
+        }
+        button {
+          @include btn;
+          padding: 16px 62px;
+          background: transparent;
+          border: 1px solid white;
+          font-size: 2.2rem;
+          // backdrop-filter: 0;
+        }
+      }
+      .Contact_bottom {
+        background-color: $color-icon;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 22.7rem;
+        row-gap: 49px;
+        position: absolute;
+        max-width: 90%;
+        top: 520px;
+        transform: translateY(-80px);
+        .Contact_Feature {
+          @include flex;
+
+          p {
+            font-size: 2.1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            color: $color-p;
+            text-align: center;
+            margin-top: 18px;
+          }
+          img {
+            @include flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .Contact {
+    border-radius: 12px;
+    margin-top: 110px;
+    background: url(../images/kom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    // height: 100vh;
+    .Contact_section {
+      margin-top: 100px;
+      .Contact_top {
+        @include flex;
+        text-align: center;
+        justify-content: center;
+        gap: 1.3rem;
+        padding: 0 62px 110px;
+        margin-top: -95px;
+        padding-bottom: 250px;
+      }
+      .Contact_bottom {
+        grid-template-columns: repeat(4, auto);
+        gap: 1.7rem;
+
+        padding: 119px 66px;
+        justify-content: space-between;
+        row-gap: 49px;
+        position: absolute;
+        // transform: translateY(150px);
+        max-width: 90%;
+        top: 530px;
+        .Contact_Feature {
+          @include flex;
+        }
+      }
+    }
+  }
+}
